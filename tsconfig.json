@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"noUnusedParameters": true,
+		"target": "es2018",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"lib": [
+			"es2018",
+			"esnext"
+		],
+		"outDir": "dist",
+		"baseUrl": ".",
+		"paths": {
+			// also update paths in alias.js
+			":utils/*": [
+				"server/utils/*"
+			]
+		}
+	},
+	"include": [
+		"server/"
+	],
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	],
+}

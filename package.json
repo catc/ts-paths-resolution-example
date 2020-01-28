@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/node": "^13.5.0",
+    "module-alias": "^2.2.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "dev": "ts-node -T -r ./alias.js server/index.ts",
+    "build": "tsc",
+    "start": "NODE_ENV=production node -r ./alias.js dist/index.js"
+  },
+  "_moduleAliases": {
+    ":utils": "server/utils/"
+  }
+}
